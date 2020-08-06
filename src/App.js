@@ -28,6 +28,7 @@ class App extends Component {
       monster.name.toLowerCase().includes(searchField.toLowerCase()))
    return (
       <div className="App">
+      <h1> Monsters Rolodex </h1>
         <SearchBox placeholder="Search Monster" handleChange={this.handleChange}/>
         <CardList monsters={filteredMonsters}/>
       </div>
